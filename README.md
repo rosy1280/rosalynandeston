@@ -12,3 +12,5 @@ cd wordpress
 git fetch --tags
 git checkout 4.0.0
 ```
+
+Instructions for installing wordpress as a submodule and updating it can be found on [David Winter's website](https://davidwinter.me/install-and-manage-wordpress-with-git/)
