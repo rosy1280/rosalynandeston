@@ -10,31 +10,28 @@
     <meta name="author" content="Rosalyn Metz and Eston Melton">
     
     <link rel="stylesheet" href="./css/foundation.css">
-    <script src="./js/modernizr.js"></script>
- 	<meta class="foundation-mq-small">
-  	<meta class="foundation-mq-medium">
-  	<meta class="foundation-mq-large">
-  	<meta class="foundation-mq-xlarge">
-  	<meta class="foundation-mq-xxlarge">
-  	<style></style>
-  	<meta class="foundation-mq-topbar">
-
+    <script src="./js/vendor/modernizr.js"></script>
   </head>
   <body style="">
 
 <!-- Navigation Bar -->
 <div class="row">
 	<div class="large-12 columns">
-		<nav class="top-bar" data-topbar>
+		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
-				<li class="name"> <h1> <a href="#">Rosalyn and Eston</a> </h1> </li>
+				<li class="name"> <h1> <a href="../">Rosalyn and Eston</a> </h1> </li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li> 
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class="divider"></li>
-					<li><a href="./babyshower">Baby Shower Blog</a></li> <li class="divider"></li> 
-					<li><a href="./holidaycards/">Holiday 2013</a></li> 
+					<li><a href="../babyshower/">Baby Shower Blog</a></li> <li class="divider"></li> 
+					<li class="has-dropdown"><a href="#">Holiday Cards</a>
+						<ul class="dropdown">
+							<li><a href="./index.html">Holiday Card 2014</a></li>
+							<li><a href="./2013.html">Holiday Card 2013</a></li>
+						</ul>
+					</li> 
 				</ul> 
 			</section> 
 		</nav>
@@ -157,14 +154,9 @@
   </div>
 </footer>
 <!-- End Footer -->
-
-    <script src="./js/jquery.js"></script>
-    <script src="./js/foundation.js"></script>
-    <script>
-      $(document).foundation();
-
-      var doc = document.documentElement;
-      doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
-  
+  <script src="./js/vendor/jquery.js"></script>
+  <script src="./js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body></html>
